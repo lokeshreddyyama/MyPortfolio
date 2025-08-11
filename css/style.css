@@ -18,7 +18,7 @@ body {
 .container {
 max-width:2200px ;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 0px;
 }
 
 /* Navbar */
@@ -31,7 +31,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   position:fixed;
-  width:97.35%;
+  top: 0;
+  left: 0;
+  width:100%;
   z-index: 1000;
 }
 
@@ -71,9 +73,9 @@ nav .navbar ul li a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   nav {
-    width: 335px;
+    width: 375px;
   }
   nav .navbar {
     display: none;
@@ -98,7 +100,28 @@ nav .navbar ul li a:hover {
     display: block;
   }
 }
+@media (max-width: 768px) 
+{
+  nav {
+    padding:10px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
+@media (max-width: 480px) {
+  nav {
+    width: 100%;
+    padding: 8px;
+  }
+  
+  nav ul li a {
+    font-size: 14px;
+  }
+}
 /* Banner Section */
 .banner {
   text-align: center;
