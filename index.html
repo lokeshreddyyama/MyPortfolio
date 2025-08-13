@@ -30,24 +30,25 @@
     <section id="banner" class="banner">
         <h1>Hi I'm YAMA LOKESH REDDY</h1>
         <h3><b>|</b>Frontend Developer</h3>
-        <img src="./images/profile1.jpg" alt=""><br>
+        <p>I’m a passionate Frontend Developer dedicated to crafting engaging and responsive websites that blend design and functionality. With a strong eye for detail and a love for clean code, I specialize in turning ideas into pixel-perfect digital experiences.</p>
+       <br> <img src="./images/profile1.jpg" alt=""><br>
         <form action="">
  <a href=""><input type="button" value="Hire Me"></a>
-  <input type="button" value="Let's Talk">
+<a href="#contact"><input type="button" value="Let's Talk"></a> 
 </form>
     </section><br>
     <section id="about" class="about">
 <h1>About Me</h1>
 <p>Hi, I’m Yama Lokesh Reddy, a passionate and dedicated Frontend Developer with a strong eye for design and detail. I specialize in crafting responsive, user-friendly websites that blend functionality with aesthetics. With a deep understanding of HTML, CSS, JavaScript, and modern frameworks, I strive to build web interfaces that not only look good but also offer a seamless user experience.
 I enjoy turning complex problems into clean, elegant code. Whether it’s developing from scratch or improving an existing UI, my goal is to ensure that every pixel and interaction is purposeful. I believe in writing efficient, maintainable code and staying updated with the latest trends in frontend technologies.</p>
-<button>Read More</button> 
- <div class="social">
+<a href="#banner"><br><button>Read More</button></a>
+<br><br><div class="social">
     <a href="https://github.com/lokeshreddyyama"><i class="fa-brands fa-github"></i></a>
     <a href="https://www.linkedin.com/in/lokesh-reddy-yama-88863831a/"><i class="fa-brands fa-linkedin"></i></a>
-    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#contact"><i class="fa-brands fa-whatsapp"></i></a>
  </div>
 </section>
- <div class="edu"><h1>Education</h1></div>
+  <div class="edu"><h1>Education</h1></div>
 <section id="education" class="education">
     <div class="card">
         <h3>Btech</h3>
@@ -63,16 +64,19 @@ I enjoy turning complex problems into clean, elegant code. Whether it’s develo
     </div>
 </section><br>
       <div class="s1"><h1>Skills</h1></div>
-    <section id="skills" class="section skills">
+    <section id="skills" class="section-skills">
       <div class="skill">
+        <div class="html"><i class="fa-brands fa-html5"></i></div>
         <p>HTML5</p>
         <div class="bar"><span style="width: 95%"></span></div>
       </div>
       <div class="skill">
+        <div class="css"><i class="fa-brands fa-css3-alt"></i></div>
         <p>CSS3</p>
         <div class="bar"><span style="width: 90%"></span></div>
       </div>
       <div class="skill">
+        <div class="javascript"><i class="fa-brands fa-square-js"></i></div>
         <p>JavaScript</p>
         <div class="bar"><span style="width: 80%"></span></div>
       </div>
@@ -81,10 +85,12 @@ I enjoy turning complex problems into clean, elegant code. Whether it’s develo
         <div class="bar"><span style="width: 85%"></span></div>
       </div>
       <div class="skill">
+        <div class="bootstrap"><i class="fa-brands fa-bootstrap"></i></div>
         <p>Bootstrap</p>
         <div class="bar"><span style="width: 75%"></span></div>
       </div>
       <div class="skill">
+        <div class="git"><i class="fa-brands fa-github"></i></div>
         <p>Git & GitHub</p>
         <div class="bar"><span style="width: 70%"></span></div>
       </div>
@@ -105,7 +111,7 @@ I enjoy turning complex problems into clean, elegant code. Whether it’s develo
   </div>
 </section>
 <div class="services"><h1>Services</h1></div>
-<section id="services"    class="services-section">
+<section id="services"  class="services-section">
   <div class="card">
     <h3>Web Design</h3>
     <p>Modern and clean web UI/UX design using Figma or HTML/CSS.</p>
@@ -121,6 +127,8 @@ I enjoy turning complex problems into clean, elegant code. Whether it’s develo
 </section>
 <div class="contact"><h1>Contact Me</h1></div>
 <section  id="contact" class="contact-section">
+<div class="paragraph"><p>Let’s Build Something Great Together!
+Got an idea, project, or opportunity? I’d love to hear from you. I’m always open to new opportunities, collaborations, or simply a good conversation. Whether it’s a freelance gig, internship, or creative idea — let’s connect! Reach out and let’s create something amazing. I’m just a message away!<br>➤ <b>lokeshreddy.1831151@gmail.com</b><br>📞<b> 9182512295</b></p></div>
   <form>
     <div class="form-group">
       <label><b>Full Name:</b></label>
@@ -145,7 +153,36 @@ I enjoy turning complex problems into clean, elegant code. Whether it’s develo
       <input type="submit" value="Submit">
     </div>
   </form>
-</section>
+</section><br>
+<footer>
+  <p>© 2025 Yama Lokesh Reddy  | All Rights Reserved</p>
+</footer>
+</div>
+<script>
+// ===== Smooth Scroll Buttons =====
+document.addEventListener("DOMContentLoaded", () => {
+    // Create scroll buttons dynamically
+    const scrollUp = document.createElement("div");
+    scrollUp.innerHTML = "&#8679;";
+    scrollUp.classList.add("scroll-btn", "up");
+    document.body.appendChild(scrollUp);
+
+    // Smooth scroll to top
+    scrollUp.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Show/Hide buttons on scroll
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            scrollUp.style.opacity = "1";
+        } else {
+            scrollUp.style.opacity = "0";
+        }
+    });
+});
+
+</script>
 
 </body>
 </html>
